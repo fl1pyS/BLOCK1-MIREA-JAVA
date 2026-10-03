@@ -1,5 +1,4 @@
 package lab1_mrea;
-import java.awt.*;
 import java.util.Scanner;
 public class Factorial {
     public static long factorial(int n){
