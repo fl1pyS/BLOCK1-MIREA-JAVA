@@ -18,25 +18,12 @@ public class Monitor {
         this.height = height;
     }
 
-    public String getModel() {
-        return model;
-    }
-    public double getDiagonal() {
-        return diagonal;
-    }
-    public int getWidth() {
-        return width;
-    }
-    public int getHeight() {
-        return height;
-    }
+    public String getModel() {return model;}
+    public double getDiagonal() {return diagonal;}
+    public int getWidth() {return width;}
+    public int getHeight() {return height;}
 
     @Override
-    public String toString() {
-        return "Monitor{" +
-                "model='" + model + '\'' +
-                ", diagonal=" + diagonal + " inches" +
-                ", resolution=" + width + "x" + height +
-                '}';
+    public String toString() {return "Monitor{" + "model='" + model + '\'' + ", diagonal=" + diagonal + " inches" + ", resolution=" + width + "x" + height + '}';
     }
 }

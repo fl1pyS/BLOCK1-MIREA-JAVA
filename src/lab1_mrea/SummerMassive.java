@@ -17,7 +17,6 @@ public class SummerMassive {
                 sc.next();
             }
         }
-
         int[] mass = new int[n];
         int summa = 0;
         double sra;
@@ -30,7 +29,6 @@ public class SummerMassive {
                 System.out.println("Число не целочисленное");
                 sc.next();
             }
-
         }
         sra = (double) summa / mass.length;
         System.out.println("Сумма массива: " + summa);

@@ -7,15 +7,9 @@ public class Schoolboy extends Learner {
         this.grade = grade;
     }
 
-
-
     public int getGrade() {
         return grade;
     }
-
     @Override
-    public String toString() {
-        return "Школьник: " + getName() +
-                ", класс: " + grade;
-    }
+    public String toString() {return "Школьник: " + getName() + ", класс: " + grade;}
 }

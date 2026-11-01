@@ -4,13 +4,11 @@ public class Processor {
     private String model;
     private int cores;
     private double frequency;
-
     public Processor(String model, int cores, double frequency) {
         this.model = model;
         this.cores = cores;
         this.frequency = frequency;
     }
-
     public String getModel() {
         return model;
     }
@@ -24,11 +22,6 @@ public class Processor {
     }
 
     @Override
-    public String toString() {
-        return "Processor{" +
-                "model='" + model + '\'' +
-                ", cores=" + cores +
-                ", frequency=" + frequency + " GHz" +
-                '}';
+    public String toString() {return "Processor{" + "model='" + model + '\'' + ", cores=" + cores + ", frequency=" + frequency + " GHz" + '}';
     }
 }

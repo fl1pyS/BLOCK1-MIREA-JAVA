@@ -8,14 +8,12 @@ public class LearnerTest {
                 new Schoolboy("Мария", 11),
                 new Student("Пётр", 1)
         };
-
         System.out.println("Студенты:");
         for (Learner learner : learners) {
             if (learner instanceof Student) {
                 System.out.println(learner);
             }
         }
-
         System.out.println("\nШкольники:");
         for (Learner learner : learners) {
             if (learner instanceof Schoolboy) {

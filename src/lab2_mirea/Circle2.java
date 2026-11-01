@@ -10,11 +10,9 @@ public class Circle2 {
         this.y = y;
         setRadius(radius);
     }
-
     public double getX() {
         return x;
     }
-
     public void setX(double x) {
         this.x = x;
     }
@@ -22,7 +20,6 @@ public class Circle2 {
     public double getY() {
         return y;
     }
-
     public void setY(double y) {
         this.y = y;
     }
@@ -30,12 +27,9 @@ public class Circle2 {
     public double getRadius() {
         return radius;
     }
-
     public void setRadius(double radius) {
         if (!Double.isFinite(radius) || radius <= 0) {
-            throw new IllegalArgumentException(
-                    "Радиус должен быть конечным числом больше нуля"
-            );
+            throw new IllegalArgumentException("Радиус должен быть конечным числом больше нуля");
         }
 
         this.radius = radius;
@@ -44,21 +38,12 @@ public class Circle2 {
     public double getArea() {
         return Math.PI * radius * radius;
     }
-
     public double getLength() {
         return 2 * Math.PI * radius;
     }
-
     public int compareRadius(Circle2 other) {
         return Double.compare(this.radius, other.radius);
     }
-
     @Override
-    public String toString() {
-        return "Circle2{" +
-                "x=" + x +
-                ", y=" + y +
-                ", radius=" + radius +
-                '}';
-    }
+    public String toString() {return "Circle2{" + "x=" + x + ", y=" + y + ", radius=" + radius + '}';}
 }

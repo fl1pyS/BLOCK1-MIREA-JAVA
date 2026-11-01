@@ -29,9 +29,6 @@ public class Computer {
     public Processor getProcessor() {
         return processor;
     }
-
-
-
     public Memory getMemory() {
         return memory;
     }
@@ -40,13 +37,6 @@ public class Computer {
         return monitor;
     }
     @Override
-    public String toString() {
-        return "Computer{" +
-                "\nbrand=" + brand +
-                "\nmodel='" + model + '\'' +
-                "\nprocessor=" + processor +
-                "\nmemory=" + memory +
-                "\nmonitor=" + monitor +
-                "\n}";
+    public String toString() {return "Computer{" + "\nbrand=" + brand + "\nmodel='" + model + '\'' + "\nprocessor=" + processor + "\nmemory=" + memory + "\nmonitor=" + monitor + "\n}";
     }
 }

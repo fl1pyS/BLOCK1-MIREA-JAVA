@@ -40,35 +40,16 @@ public class BookTest {
             System.out.println("Строка не должна быть пустой");
         }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        int size = readPositiveInt(
-                scanner,
-                "Введите количество книг: "
-        );
-
+        int size = readPositiveInt(scanner, "Введите количество книг: ");
         Bookshelf shelf = new Bookshelf(size);
-
         for (int i = 0; i < size; i++) {
             System.out.println("\nКнига № " + (i + 1));
 
-            String author = readString(
-                    scanner,
-                    "Введите автора: "
-            );
-
-            String title = readString(
-                    scanner,
-                    "Введите название: "
-            );
-
-            int year = readPositiveInt(
-                    scanner,
-                    "Введите год издания: "
-            );
-
+            String author = readString(scanner, "Введите автора: ");
+            String title = readString(scanner, "Введите название: ");
+            int year = readPositiveInt(scanner, "Введите год издания: ");
             Book book = new Book(author, title, year);
             shelf.addBook(book);
         }
@@ -76,16 +57,10 @@ public class BookTest {
         System.out.println("\nКниги на полке:");
         shelf.printBooks();
 
-        System.out.println(
-                "\nСамая ранняя книга: " + shelf.getEarliestBook()
-        );
+        System.out.println("\nСамая ранняя книга: " + shelf.getEarliestBook());
 
-        System.out.println(
-                "Самая поздняя книга: " + shelf.getLatestBook()
-        );
-
+        System.out.println("Самая поздняя книга: " + shelf.getLatestBook());
         shelf.sortByYear();
-
         System.out.println("\nКниги по возрастанию года издания:");
         shelf.printBooks();
 

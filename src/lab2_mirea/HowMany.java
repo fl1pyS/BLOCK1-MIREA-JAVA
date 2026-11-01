@@ -14,9 +14,7 @@ public class HowMany {
             String[] words = text.split("\\s+");
             count = words.length;
         }
-
         System.out.println("Количество слов: " + count);
-
         scanner.close();
     }
 }

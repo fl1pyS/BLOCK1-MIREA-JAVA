@@ -52,21 +52,15 @@ public class Circle2Test {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Первая окружность:");
         Circle2 first = readCircle(scanner);
-
         System.out.println("\nВторая окружность:");
         Circle2 second = readCircle(scanner);
-
         System.out.println("\nДанные первой окружности:");
         printCircle(first);
-
         System.out.println("\nДанные второй окружности:");
         printCircle(second);
-
         int result = first.compareRadius(second);
-
         if (result > 0) {
             System.out.println("\nРадиус первой окружности больше");
         } else if (result < 0) {
@@ -75,13 +69,8 @@ public class Circle2Test {
             System.out.println("\nРадиусы окружностей равны");
         }
 
-        double newRadius = readDouble(
-                scanner,
-                "\nВведите новый радиус первой окружности: ",
-                true);
-
+        double newRadius = readDouble(scanner, "\nВведите новый радиус первой окружности: ", true);
         first.setRadius(newRadius);
-
         System.out.println("Новый радиус: " + first.getRadius());
         printCircle(first);
 

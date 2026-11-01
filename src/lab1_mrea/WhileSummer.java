@@ -26,7 +26,6 @@ public class WhileSummer {
             } else {
                 System.out.println("Число не является целочисленным");
                 sc.next();
-
             }
         }
         int summ = 0;
@@ -35,7 +34,6 @@ public class WhileSummer {
             summ += mass[j];
             j++;
         }while(j < mass.length);
-
         int max = mass[0];
         int min = mass[0];
         int k = 0;

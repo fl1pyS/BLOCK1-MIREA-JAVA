@@ -16,15 +16,12 @@ public class CurrencyConverter {
                 throw new IllegalArgumentException("Неизвестная валюта");
         }
     }
-
     public double convert(double amount, String from, String to) {
         if (!Double.isFinite(amount) || amount < 0) {
             throw new IllegalArgumentException(
                     "Сумма должна быть конечной и неотрицательной");
         }
-
         double result = amount * (getRate(from) / getRate(to));
-
         if (!Double.isFinite(result)) {
             throw new IllegalArgumentException("Слишком большая сумма");
         }

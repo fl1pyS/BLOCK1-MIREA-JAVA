@@ -12,7 +12,5 @@ public class Student extends Learner {
 
     @Override
     public String toString() {
-        return "Студент: " + getName() +
-                ", курс: " + course;
-    }
+        return "Студент: " + getName() + ", курс: " + course;}
 }

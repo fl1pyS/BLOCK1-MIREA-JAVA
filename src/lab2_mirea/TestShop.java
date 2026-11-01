@@ -6,18 +6,12 @@ import java.util.Scanner;
 public class TestShop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int size = readPositiveInt(scanner, "Введите максимальное количество компьютеров: ");
-
         Shop shop = new Shop(size);
-
         int command = -1;
-
         while (command != 0) {
             printMenu();
-
             command = readInt(scanner, "Выберите действие: ");
-
             switch (command) {
                 case 1:
                     addComputer(scanner, shop);
@@ -52,27 +46,22 @@ public class TestShop {
 
     public static void addComputer(Scanner scanner, Shop shop) {
         String brand = readString(scanner, "Введите производителя: ");
-
         String model = readString(scanner, "Введите модель: ");
-
         double price = readPositiveDouble(scanner, "Введите стоимость: ");
-
         Computer computer = new Computer(brand, model, price);
-
         shop.addComputer(computer);
     }
 
     public static void removeComputer(Scanner scanner, Shop shop) {
         String model = readString(scanner, "Введите модель для удаления: ");
-
         shop.removeComputer(model);
     }
 
     public static void findComputer(Scanner scanner, Shop shop) {
         String model = readString(scanner, "Введите модель для поиска: ");
 
-        Computer computer = shop.findComputer(model);
 
+        Computer computer = shop.findComputer(model);
         if (computer != null) {
             System.out.println("Компьютер найден:");
             System.out.println(computer);
@@ -80,25 +69,23 @@ public class TestShop {
             System.out.println("Компьютер не найден");
         }
     }
-
     public static int readInt(
             Scanner scanner,
             String message
     ) {
         while (true) {
             System.out.print(message);
-
             if (scanner.hasNextInt()) {
                 int number = scanner.nextInt();
                 scanner.nextLine();
 
                 return number;
             }
-
             System.out.println("Ошибка: необходимо ввести целое число");
             scanner.nextLine();
         }
     }
+
 
     public static int readPositiveInt(
             Scanner scanner,
@@ -106,11 +93,9 @@ public class TestShop {
     ) {
         while (true) {
             int number = readInt(scanner, message);
-
             if (number > 0) {
                 return number;
             }
-
             System.out.println("Число должно быть больше нуля");
         }
     }
@@ -121,10 +106,10 @@ public class TestShop {
     ) {
         while (true) {
             System.out.print(message);
-
             if (scanner.hasNextDouble()) {
                 double number = scanner.nextDouble();
                 scanner.nextLine();
+
 
                 if (number > 0) {
                     return number;

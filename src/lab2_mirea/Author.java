@@ -21,8 +21,6 @@ public class Author {
 
     public char getGender(){ return gender;}
     @Override
-    public String toString(){
-        return "Author{name='" + name + "', email='" + email + "', gender=" + gender + "}";
-    }
+    public String toString(){return "Author{name='" + name + "'" + "," + " email='" + email + "'," + " gender=" + gender + "}";}
 
 }

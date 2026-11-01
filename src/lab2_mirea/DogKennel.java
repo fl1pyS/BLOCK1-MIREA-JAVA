@@ -62,31 +62,24 @@ public class DogKennel {
         while (true) {
             System.out.print("Введите кличку: ");
             String name = scanner.nextLine().trim();
-
             if (!name.isEmpty()) {
                 return name;
             }
-
             System.out.println("Кличка не должна быть пустой");
         }
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int size = readInt(
                 scanner,
                 "Введите количество собак: ",
                 1
         );
-
         DogKennel kennel = new DogKennel(size);
-
         for (int i = 0; i < size; i++) {
             System.out.println("\nСобака № " + (i + 1));
-
             String name = readName(scanner);
-
             int age = readInt(
                     scanner,
                     "Введите возраст в полных годах: ",
@@ -96,10 +89,8 @@ public class DogKennel {
             Dog dog = new Dog(name, age);
             kennel.addDog(dog);
         }
-
         System.out.println("\nСобаки в питомнике:");
         kennel.printDogs();
-
         scanner.close();
     }
 

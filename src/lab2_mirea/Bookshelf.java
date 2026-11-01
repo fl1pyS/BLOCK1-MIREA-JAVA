@@ -20,29 +20,25 @@ public class Bookshelf {
             System.out.println("Книжная полка заполнена");
         }
     }
-
     public Book getEarliestBook() {
         if (count == 0) {
             return null;
         }
-
         Book earliest = books[0];
-
         for (int i = 1; i < count; i++) {
             if (books[i].getYear() < earliest.getYear()) {
                 earliest = books[i];
             }
         }
-
         return earliest;
     }
-
     public Book getLatestBook() {
         if (count == 0) {
             return null;
         }
-
         Book latest = books[0];
+
+
 
         for (int i = 1; i < count; i++) {
             if (books[i].getYear() > latest.getYear()) {
@@ -52,7 +48,6 @@ public class Bookshelf {
 
         return latest;
     }
-
     public void sortByYear() {
         Arrays.sort(
                 books,
@@ -61,13 +56,11 @@ public class Bookshelf {
                 Comparator.comparingInt(Book::getYear)
         );
     }
-
     public void printBooks() {
         if (count == 0) {
             System.out.println("Полка пустая");
             return;
         }
-
         for (int i = 0; i < count; i++) {
             System.out.println((i + 1) + ". " + books[i]);
         }

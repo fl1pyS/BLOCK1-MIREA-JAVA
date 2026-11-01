@@ -8,7 +8,6 @@ public class Tester {
         circles = new Circle[size];
         count  = 0;
     }
-
     public void addCircle(Circle circle){
         if (count< circles.length){
             circles[count] = circle;
@@ -26,16 +25,15 @@ public class Tester {
     }
 
 
+
+
+
     public static void main(String[] args){
         Tester tester = new Tester(3);
-
         Point point1 = new Point(2,3);
         Point point2 = new Point(5,10);
-
-
         Circle circle1 = new Circle(point1,3);
         Circle circle2 = new Circle(point2, 6);
-
         tester.addCircle(circle1);
         tester.addCircle(circle2);
         tester.printCircles();

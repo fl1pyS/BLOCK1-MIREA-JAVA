@@ -21,15 +21,9 @@ public class Dog {
     public void setAge(int age){
         this.age = age;
     }
-
     public int getHumanAge(){return age * 7;}
 
     @Override
-    public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", humanAge=" + getHumanAge() +
-                '}';
+    public String toString() {return "Dog{" + "name='" + name + '\'' + ", age=" + age + ", humanAge=" + getHumanAge() + '}';
     }
 }

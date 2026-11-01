@@ -14,21 +14,14 @@ public class Computer {
     public String getBrand() {
         return brand;
     }
-
     public String getModel() {
         return model;
     }
-
     public double getPrice() {
         return price;
     }
 
     @Override
-    public String toString() {
-        return "Computer{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", price=" + price +
-                '}';
+    public String toString() {return "Computer{" + "brand='" + brand + '\'' + ", model='" + model + '\'' + ", price=" + price + '}';
     }
 }

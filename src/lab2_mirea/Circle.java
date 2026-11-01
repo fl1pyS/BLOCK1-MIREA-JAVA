@@ -11,23 +11,16 @@ public class Circle {
     }
 
     public Point getCenter(){return  center;}
-
     public double getRadius(){return radius;}
 
     public void setCenter(Point center) {
         this.center = center;
     }
-
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
     @Override
-    public String toString(){
-        return "Circle{" +
-                "center=" + center +
-                ", radius=" + radius +
-                '}';
-    }
+    public String toString(){return "Circle{" + "center=" + center + ", radius=" + radius + '}';}
 
 }

@@ -9,7 +9,6 @@ public class Animal implements Nameable {
         this.species = species;
         this.nickname = nickname;
     }
-
     @Override
     public String getName() {
         return species + " " + nickname;

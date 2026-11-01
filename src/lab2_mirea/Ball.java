@@ -29,12 +29,7 @@ public class Ball {
     }
 
     @Override
-    public String toString(){
-        return "Ball{" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
-    }
+    public String toString(){return "Ball{" + "x=" + x + ", y=" + y + '}';}
 }
 
 
