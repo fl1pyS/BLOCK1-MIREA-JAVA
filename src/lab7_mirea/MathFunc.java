@@ -9,10 +9,7 @@ public class MathFunc implements MathCalculable {
         return Math.hypot(real, imaginary);
     }
     public double getCircleLength(double radius) {
-        if (!Double.isFinite(radius) || radius <= 0) {
-            throw new IllegalArgumentException(
-                    "Радиус должен быть конечным числом больше нуля");
-        }
+        if (!Double.isFinite(radius) || radius <= 0) {throw new IllegalArgumentException("Радиус должен быть конечным числом больше нуля");}
         return 2 * PI * radius;
     }
 }

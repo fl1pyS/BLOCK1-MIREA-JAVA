@@ -14,8 +14,6 @@ public class CurrencyConverterTest {
                 if (Double.isFinite(amount) && amount >= 0) {
                     return amount;
                 }
-
-
                 System.out.println("Сумма должна быть конечной и неотрицательной");
             } else {
                 System.out.println("Ошибка: введите число");
@@ -53,10 +51,7 @@ public class CurrencyConverterTest {
         scanner.useLocale(Locale.US);
         CurrencyConverter converter = new CurrencyConverter();
         String[] currencies = {"RUB", "USD", "EUR"};
-        NumberFormat format =
-                NumberFormat.getCurrencyInstance(
-                        new Locale("ru", "RU")
-                );
+        NumberFormat format = NumberFormat.getCurrencyInstance(new Locale("ru", "RU"));
         format.setMinimumFractionDigits(2);
         format.setMaximumFractionDigits(2);
         System.out.print("Дробные числа вводите через точку.");
@@ -82,9 +77,7 @@ public class CurrencyConverterTest {
 
                 format.setCurrency(Currency.getInstance(to));
 
-                System.out.println(
-                        "Результат: " + format.format(result)
-                );
+                System.out.println("Результат: " + format.format(result));
             } catch (IllegalArgumentException exception) {
                 System.out.println(exception.getMessage());
             }

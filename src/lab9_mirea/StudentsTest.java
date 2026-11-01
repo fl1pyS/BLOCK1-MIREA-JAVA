@@ -5,7 +5,6 @@ public class StudentsTest {
             Student current = students[i];
             int j = i - 1;
 
-
             while (j >= 0 && students[j].compareTo(current) > 0) {
                 students[j + 1] = students[j];
                 j--;

@@ -6,6 +6,5 @@ public class Chair extends Furniture {
     }
 
     @Override
-    public String getType() {return "Стул";
-    }
+    public String getType() {return "Стул";}
 }

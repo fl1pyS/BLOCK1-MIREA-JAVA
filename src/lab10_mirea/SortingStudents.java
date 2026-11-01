@@ -111,10 +111,7 @@ public class SortingStudents implements Comparator<Student> {
         for (int i = 1; i < iDNumber.length; i++) {
             Student current = iDNumber[i];
             int j = i - 1;
-            while (j >= 0 &&
-                    iDNumber[j].getSurname()
-                            .compareTo(current.getSurname()) > 0) {
-
+            while (j >= 0 && iDNumber[j].getSurname().compareTo(current.getSurname()) > 0) {
                 iDNumber[j + 1] = iDNumber[j];
                 j--;
             }
@@ -124,12 +121,8 @@ public class SortingStudents implements Comparator<Student> {
 
 
 
-    public static Student[] mergeLists(
-            Student[] first,
-            Student[] second
-    ) {
-        Student[] result =
-                new Student[first.length + second.length];
+    public static Student[] mergeLists(Student[] first, Student[] second) {
+        Student[] result = new Student[first.length + second.length];
 
         for (int i = 0; i < first.length; i++) {
             result[i] = first[i];

@@ -23,7 +23,6 @@ public class Shop {
                 for (int j = i; j < count - 1; j++) {
                     computers[j] = computers[j + 1];
                 }
-
                 computers[count - 1] = null;
                 count--;
 
