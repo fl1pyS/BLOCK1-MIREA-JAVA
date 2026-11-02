@@ -14,9 +14,7 @@ public class Task2 {
                     "Введите дату и время (дд.ММ.гггг ЧЧ:мм:сс): "
             );
             String text = scanner.nextLine();
-            if (!text.matches(
-                    "\\d{2}\\.\\d{2}\\.\\d{4} \\d{2}:\\d{2}:\\d{2}"
-            )) {
+            if (!text.matches("\\d{2}\\.\\d{2}\\.\\d{4} \\d{2}:\\d{2}:\\d{2}")) {
                 System.out.println("Неверный формат");
                 continue;
             }
