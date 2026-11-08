@@ -31,10 +31,24 @@ public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите k: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Ошибка: k должно быть целым числом.");
+            scanner.close();
+            return;
+        }
         int k = scanner.nextInt();
         System.out.print("Введите s: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Ошибка: s должно быть целым числом.");
+            scanner.close();
+            return;
+        }
         int s = scanner.nextInt();
         scanner.close();
+        if (k <= 0 || s <= 0) {
+            System.out.println("Ошибка: k и s должны быть больше нуля.");
+            return;
+        }
         System.out.println(count(k, s, true));
     }
 }

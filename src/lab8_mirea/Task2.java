@@ -12,8 +12,18 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите n: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Ошибка: введите целое число.");
+            scanner.close();
+            return;
+        }
         int n = scanner.nextInt();
         scanner.close();
+        if (n <= 0) {
+            System.out.println("Ошибка: n должно быть больше нуля.");
+            return;
+        }
         printNumbers(n);
+        System.out.println();
     }
 }

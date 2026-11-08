@@ -1,29 +1,35 @@
 package lab13_mirea;
-import java.util.Scanner;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
+import java.util.Locale;
 
 public class Task1 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-
-        System.out.print("Введите строку: ");
-        String text = scanner.nextLine();
-        while (true) {
-            System.out.print("Введите регулярное выражение-разделитель: ");
-            String regex = scanner.nextLine();
-            try {
-                Pattern pattern = Pattern.compile(regex);
-                String[] parts = pattern.split(text, -1);
-                for (int i = 0; i < parts.length; i++) {
-                    System.out.println((i + 1) + ": " + parts[i]);
-                }
-                break;
-            } catch (PatternSyntaxException exception) {
-                System.out.println("Ошибка в регулярном выражении. Повторите ввод.");
-            }
+    public static void process(String text) {
+        if (text == null) {
+            System.out.println("Строка не задана");
+            return;
         }
-        scanner.close();
+        if (text.isEmpty()) {
+            System.out.println("Строка пустая, последнего символа нет");
+        } else {
+            System.out.println("Последний символ: " + text.charAt(text.length() - 1));
+        }
+        System.out.println("Заканчивается на !!!: " + text.endsWith("!!!"));
+        System.out.println("Начинается с I like: " + text.startsWith("I like"));
+        System.out.println("Содержит Java: " + text.contains("Java"));
+
+        int index = text.indexOf("Java");
+
+        System.out.println("Позиция Java: " + index);
+        System.out.println("Замена a на o: " + text.replace('a', 'o'));
+        System.out.println("Верхний регистр: " + text.toUpperCase(Locale.ROOT));
+        System.out.println("Нижний регистр: " + text.toLowerCase(Locale.ROOT));
+
+        if (index >= 0) {
+            System.out.println("Подстрока: " + text.substring(index, index + 4));
+        } else {
+            System.out.println("Подстрока Java не найдена");
+        }
+    }
+    public static void main(String[] args) {
+        process("I like Java!!!");
     }
 }

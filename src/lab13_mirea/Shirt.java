@@ -1,4 +1,4 @@
-package lab12_mirea;
+package lab13_mirea;
 
 public class Shirt {
     private String code;
