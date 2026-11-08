@@ -13,13 +13,23 @@ public class Task3 {
             printNumbers(a - 1, b);
         }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите A: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Ошибка: A должно быть целым числом.");
+            scanner.close();
+            return;
+        }
         int a = scanner.nextInt();
+        System.out.print("Введите B: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Ошибка: B должно быть целым числом.");
+            scanner.close();
+            return;
+        }
         int b = scanner.nextInt();
-        printNumbers(a, b);
-
         scanner.close();
+        printNumbers(a, b);
     }
 }

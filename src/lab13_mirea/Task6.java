@@ -1,4 +1,4 @@
-package lab12_mirea;
+package lab13_mirea;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

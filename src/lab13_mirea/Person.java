@@ -1,4 +1,4 @@
-package lab12_mirea;
+package lab13_mirea;
 public class Person {
     private String surname;
     private String name;

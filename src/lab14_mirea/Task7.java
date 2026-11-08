@@ -1,4 +1,4 @@
-package lab13_mirea;
+package lab14_mirea;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 

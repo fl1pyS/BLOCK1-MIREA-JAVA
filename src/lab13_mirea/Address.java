@@ -1,4 +1,4 @@
-package lab12_mirea;
+package lab13_mirea;
 import java.util.StringTokenizer;
 
 public class Address {
