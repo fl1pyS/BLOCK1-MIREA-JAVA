@@ -51,7 +51,6 @@ public class MergeSort {
 
     }
 
-
     public static Student[] combine(Student[] first, Student[] second) {
         Student[] combined = new Student[first.length + second.length];
         for (int i = 0; i < first.length; i++) {
