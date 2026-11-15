@@ -7,15 +7,15 @@
 - [Практика 3](src/BLOCK1/lab3_mirea) — конвертер валют
 - [Практика 4](src/BLOCK1/lab4_mirea) — модель компьютера
 - [Практика 4.1](src/BLOCK1/lab4_1_mirea) — наследование на примерах учащихся и мебели
-- [Практика 6](src/BLOCK1/lab6_mirea) — интерфейс `Nameable`
-- [Практика 7](src/BLOCK1/lab7_mirea) — интерфейс `MathCalculable`
+- [Практика 6](src/BLOCK1/lab6_mirea) — интерфейс Nameable
+- [Практика 7](src/BLOCK1/lab7_mirea) — интерфейс MathCalculable
 
 ## Блок 2
 
 - [Практика 8](src/BLOCK2/lab8_mirea) — рекурсия
 - [Практика 9](src/BLOCK2/lab9_mirea) — сортировка студентов по ID и баллам
 - [Практика 10](src/BLOCK2/lab10_mirea) — сортировка и объединение списков студентов
-- [Практика 11](src/BLOCK2/lab11_mirea) — даты и сравнение `ArrayList` с `LinkedList`
+- [Практика 11](src/BLOCK2/lab11_mirea) — даты и сравнение ArrayList с LinkedList
 - [Практика 13](src/BLOCK2/lab13_mirea) — работа со строками
   - [Разбор адреса](src/BLOCK2/lab13_mirea/lab13_1_mirea)
   - [Карточки одежды](src/BLOCK2/lab13_mirea/lab13_2_mirea)
