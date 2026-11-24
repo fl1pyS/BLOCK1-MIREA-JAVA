@@ -11,6 +11,7 @@ public class Main {
                     Task4.listDirectory(scanner.nextLine());
                     return;
                 } catch (IllegalArgumentException e) {
+
                     System.out.println(e.getMessage());
                 }
             }
