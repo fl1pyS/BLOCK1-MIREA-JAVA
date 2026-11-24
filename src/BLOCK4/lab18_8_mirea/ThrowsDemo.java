@@ -6,9 +6,7 @@ public class ThrowsDemo {
         while (true) {
             System.out.print("Введите ключ: ");
             if (!scanner.hasNextLine()) return;
-
             String key = scanner.nextLine().trim();
-
             try {
                 printDetails(key);
                 return;
