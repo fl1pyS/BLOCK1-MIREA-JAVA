@@ -12,7 +12,6 @@ public class Student implements Comparable<Student> {
     public int getIDNumber() {return iDNumber;}
     public int getGPA() {return gpa;}
 
-
     @Override
     public int compareTo(Student other) {
         if (iDNumber < other.iDNumber) {

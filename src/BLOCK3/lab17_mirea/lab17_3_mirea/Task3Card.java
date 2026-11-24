@@ -1,8 +1,6 @@
 package BLOCK3.lab17_mirea.lab17_3_mirea;
 import java.util.Scanner;
 
-
-
 public class Task3Card {
     private String name;
     private String group;
@@ -11,7 +9,6 @@ public class Task3Card {
         System.out.print("Имя: ");
         if (!scanner.hasNextLine()) return false;
         name = scanner.nextLine().trim();
-
 
         System.out.print("Группа: ");
         if (!scanner.hasNextLine()) return false;

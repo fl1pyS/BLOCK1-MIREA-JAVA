@@ -1,5 +1,4 @@
 package BLOCK3.lab17_mirea.lab17_2_mirea;
-
 import java.util.Scanner;
 
 

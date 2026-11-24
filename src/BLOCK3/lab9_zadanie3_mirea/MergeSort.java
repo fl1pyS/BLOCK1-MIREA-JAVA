@@ -19,8 +19,6 @@ public class MergeSort {
     }
 
 
-
-
     public static Student[] merge(Student[] left, Student[] right) {
         Student[] result = new Student[left.length + right.length];
         int i = 0;
